@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif
+}
+:root{
+  --white:#fff;
+  --black:#000;
+  --main:#ff6e68;
+  --lightblack:#2c2c2c;
+}
+.container{
+  width: 1300px;
+  margin: 0 auto;
+}
+.nav{
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  background: var(--white);
+  z-index: 1;
+}
+.nav__container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+}
+.nav__left{
+  width: 100px;
+ 
+}
+.logo{
+  width: 200px;
+  height: 50px;
+}
+.header{
+  background: url("/public/Images/background.webp");
+  height:100vh ;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+
+}
+.cart-icon{
+  color: var(--main);
+  font-size: 25px;
+}
+
+.basket{
+  position: relative;
+}
+.basket span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  height: 25px;
+  width: 25px;
+  background: var(--lightblack);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 12px;
+}
+.img{
+  height: 250px;
+  width: 250px;
+}
+.mtb-30{
+  margin: 30px auto;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.row{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.col-3{
+  width: 25%;
+}
+.col-6{
+  width: 50%;
+  margin: 10px 0;
+}
+.col-2{
+  width: 16.33333333333333%;
+}
+.col-9{
+  width: 75%;
+}
+.product_img{
+  overflow: hidden;
+}
+.product_img img{
+ margin: 10px;
+ transition: all 0.5s linear;
+}
+.product_img img:hover{
+  transform: scale(1.2);
+}
+.product-name{
+  margin: 10px 0;
+  text-transform: capitalize;
+  color: #c91212;
+}
+
+.disc{
+  color: rgb(131, 68, 68);
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+.price{
+  text-decoration: line-through;
+  font-size: 20px;
+}
+.details_img{
+  width: 100%;
+  height: auto;
+  padding-right: 30px;
+}
+.details_img img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.details_name{
+  font-size: 30px;
+  color: #c91212;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.actual_price{
+  text-decoration: line-through;
+  font-size: 30px;
+  margin: 10px 0;
+  padding-right: 10px;
+  padding-left: 2px;
+}
+.discount{
+      padding: 5px;
+      font-size: 15px;
+      font-weight: 400;
+      margin: 15px 0;
+}
+.discount_price{
+  font-size: 30px;
+  padding-right: 10px;
+  padding-left: 2px;
+}
+.dscsym{
+  margin-left: 30px;
+}
+.details_info{
+  display: flex;
+}
+.dec,
+.inc,
+.quan{
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(121, 116, 116);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.quan{
+  border-left: none;
+  border-right: none;
+}
+.inc,
+.dec{
+  cursor: pointer;
+}
+.btn_cart{
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+  background: #c91212;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.deails_p{
+  margin-top: 15px;
+}
+.deails_p h4{
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+/* cart section */
+
+.cart{
+  margin-top: 100px;
+}
+.cart h3{
+  font-weight: 400;
+}
+.Cart_heading{
+ background: #f4f6f8;
+ padding: 10px; 
+}
+.cart_image img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.varticalAlign{
+  align-items: center;
+  margin-top: 10px;
+}
+.cart_total{
+  text-align: center;
+  margin-right: 80px;
+}
+.cart_remove{
+  cursor: pointer;
+
+}
+.summery{
+  padding-left: 10px;
+}
+.summery_heading{
+  background: #f4f6f8;
+  padding: 10px;
+}
+
+.details_info{
+  margin-right: 50px;
+}
+.summery_details{
+  background-color: aqua;
+  color: rgb(2, 13, 22);
+  padding: 15px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.btn{
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: #ff6e68;
+  color: #000;
+  width: 100%;
+  padding: 12px 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+@media (max-width:765px){
+  .container{
+    background: red;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .col-3{
+    width: 50%;
+  }
+}
+@media (max-width:400px){
+  .col-3{
+    width: 100%s;
+  }
+}
+@media (max-width:840px){
+  .container{
+    background: red;
+    width: 100%;
+    padding: 0 30px;
+  }
+}
